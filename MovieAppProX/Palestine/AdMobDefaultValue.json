@@ -1,0 +1,156 @@
+{
+  "status": true,
+  "splash": {
+    "name": "ID_Intern_Splash",
+    "status": true,
+    "id": "ca-app-pub-3617606523175567/5534434689",
+    "description": "Sau khi load splash chuyển sang màn home(User tắt ads mới chuyển layout) - Timeout: 30s",
+    "timeout": 30
+  },
+  "appOpen": {
+    "name": "ID_Open_app",
+    "status": true,
+    "id": "ca-app-pub-3617606523175567/9724961139",
+    "description": "Vị trí: Show khi quay lại app"
+  },
+  "rewardeds": [
+    {
+      "name": "ID_Rewards_Camera",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/4741061911",
+      "description": "Ad Reward màn camera, sau khi xem ad +3 lượt quay"
+    }
+  ],
+  "interstitials": [
+    {
+      "name": "ID_Inter_Home_Trending",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Vị trí: Click Camera. Delay 1 click",
+      "start": 2,
+      "frequency": 1
+    },
+    {
+      "name": "ID_Interstitial_Empty",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Vị trí: Click nút Camera tại màn Gallery_Empty. Delay 1 click",
+      "start": 2,
+      "frequency": 1
+    },
+    {
+      "name": "ID_Inter_Home_Click_Video",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Click video từ màn Trending. Tần suất: Mỗi 2 lần click thì show 1 ad inter. Delay 1 click",
+      "start": 2,
+      "frequency": 2
+    },
+    {
+      "name": "ID_Interstitial_Preview",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Click button Back to Home, back"
+    },
+    {
+      "name": "ID_Inter_Home_Trending_Detail",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Click vào Try now. Tần suất: Show từ lần thứ 2, sau đó mỗi 2 lần show 1 ad",
+      "start": 2,
+      "frequency": 2
+    },
+    {
+      "name": "ID_Interstitial_Camera_Back",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/7602194824",
+      "description": "Ad inter show khi click vào nút Back tại màn Camera"
+    },
+    {
+      "name": "ID_Inter_Retake",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Ad inter show khi click button Retake. Tần suất: Mỗi 2 lần click thì show 1 ad",
+      "start": 1,
+      "frequency": 2
+    },
+    {
+      "name": "ID_Inter_Trending_Back",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Ad inter khi click thoát màn trending ra màn Home. Delay click 1. Tần suất: mỗi 3 lần show 1 ad",
+      "start": 2,
+      "frequency": 3
+    },
+    {
+      "name": "ID_Inter_Camera_Trending",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2712830226",
+      "description": "Ad inter show khi click vào data pop up refer to trending"
+    }
+  ],
+  "banners": [
+    {
+      "name": "ID_Collapsible_Trending_Detail",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/6907226102",
+      "description": "Vị trí: Dưới button Try now",
+      "anchored": "bottom"
+    },
+    {
+      "name": "ID_Collapsible_Default",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/6795545469",
+      "description": "Vị trí: Ads collapsible trên cùng màn Camera",
+      "anchored": "top"
+    },
+    {
+      "name": "ID_Collap_Gallery_Items",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/5482463792",
+      "description": "Vị trí: dưới cùng màn Gallery, Home Trending",
+      "anchored": "bottom"
+    },
+    {
+      "name": "ID_Collapsible_Results_Top",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/2856300457",
+      "description": "Vị trí: Ads collapsible trên cùng màn Results ",
+      "anchored": "top"
+    }
+  ],
+  "natives": [
+    {
+      "name": "ID_Native_Onboard",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/7582013524",
+      "description": "Ad Native màn Onboard",
+      "isPreload": true
+    },
+    {
+      "name": "ID_Native_Language",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/7390441838",
+      "description": "Ad Native dưới cùng màn Language",
+      "isPreload": true
+    },
+    {
+      "name": "ID_Native_Filter",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/3376063252",
+      "description": "Ad Native dưới cùng màn chọn Filter"
+    },
+    {
+      "name": "ID_Native_Sounds",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/9462071404",
+      "description": "Ads native dưới cùng màn Sound"
+    },
+    {
+      "name": "ID_Native_Share",
+      "status": true,
+      "id": "ca-app-pub-3617606523175567/8732331715",
+      "description": "Ad Native dưới cùng màn Share"
+    }
+  ]
+}

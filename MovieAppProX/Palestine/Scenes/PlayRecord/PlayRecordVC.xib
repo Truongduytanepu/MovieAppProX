@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-ExtraBold.ttf">
+            <string>NunitoSans-ExtraBold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayRecordVC" customModule="Palestine" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="jPW-NI-ek6" id="UtH-dy-VfS"/>
+                <outlet property="deleteLabel" destination="Wnj-W2-8jM" id="eS8-PW-jWC"/>
+                <outlet property="deleteThisLabel" destination="Dyf-jK-WXJ" id="U0v-z1-Zha"/>
+                <outlet property="discardLabel" destination="t6d-Dh-7qj" id="TUj-yu-Jxu"/>
+                <outlet property="discardView" destination="geG-5L-1DT" id="6M0-pa-5yX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="youWonLabel" destination="fgg-RW-gMW" id="hUi-kv-noo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jPW-NI-ek6">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ml4-9F-aTI">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backDark" translatesAutoresizingMaskIntoConstraints="NO" id="tUw-pT-qcv">
+                    <rect key="frame" x="4" y="67" width="48" height="48"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="BqK-aY-v6B"/>
+                        <constraint firstAttribute="height" constant="48" id="s8O-Xc-pzY"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="59S-7A-Q5r" appends="YES" id="qRF-ta-J8o"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deleteGallery1" translatesAutoresizingMaskIntoConstraints="NO" id="LNr-74-7Hv">
+                    <rect key="frame" x="341" y="67" width="48" height="48"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="4cw-r5-PLr"/>
+                        <constraint firstAttribute="height" constant="48" id="d3o-xq-vJd"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="fmE-4x-ULd" appends="YES" id="NvN-6p-P2k"/>
+                    </connections>
+                </imageView>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geG-5L-1DT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31V-6p-7oO">
+                            <rect key="frame" x="33" y="333.66666666666669" width="327" height="184.66666666666669"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLx-hu-dtU">
+                                    <rect key="frame" x="24" y="121.66666666666663" width="135" height="39"/>
+                                    <subviews>
+                                        <label contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnj-W2-8jM">
+                                            <rect key="frame" x="43.666666666666671" y="8.6666666666666856" width="47.666666666666671" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                            <color key="textColor" red="0.49803921569999998" green="0.83137254900000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="39" id="5Mm-Io-qm9"/>
+                                        <constraint firstItem="Wnj-W2-8jM" firstAttribute="centerY" secondItem="aLx-hu-dtU" secondAttribute="centerY" id="Gn0-me-Pc9"/>
+                                        <constraint firstAttribute="width" constant="135" id="I1R-X5-VOG"/>
+                                        <constraint firstItem="Wnj-W2-8jM" firstAttribute="centerX" secondItem="aLx-hu-dtU" secondAttribute="centerX" id="JMN-WV-GC5"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.49803921569999998" green="0.83137254900000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="pTS-sx-E5E" appends="YES" id="Zqm-vg-ORF"/>
+                                    </connections>
+                                </view>
+                                <label contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete this video?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-jK-WXJ">
+                                    <rect key="frame" x="0.0" y="24" width="327" height="22"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="diR-bd-iSQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="18"/>
+                                    <color key="textColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You won’t be able to see this video again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgg-RW-gMW">
+                                    <rect key="frame" x="29.666666666666657" y="54" width="268" height="43.666666666666657"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="268" id="FHf-yn-Apo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                    <color key="textColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoJ-TC-WDg">
+                                    <rect key="frame" x="168" y="121.66666666666663" width="135" height="39"/>
+                                    <subviews>
+                                        <label contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6d-Dh-7qj">
+                                            <rect key="frame" x="39.666666666666657" y="8.6666666666666856" width="56" height="22"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.49803921569999998" green="0.83137254900000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="t6d-Dh-7qj" firstAttribute="centerY" secondItem="YoJ-TC-WDg" secondAttribute="centerY" id="88c-C6-PIN"/>
+                                        <constraint firstAttribute="height" constant="39" id="Lfk-3s-o46"/>
+                                        <constraint firstAttribute="width" constant="135" id="Szi-hT-Wgz"/>
+                                        <constraint firstItem="t6d-Dh-7qj" firstAttribute="centerX" secondItem="YoJ-TC-WDg" secondAttribute="centerX" id="fwZ-pM-Bm0"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="bFd-Cd-WGv" appends="YES" id="bwx-N6-2gt"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="aLx-hu-dtU" firstAttribute="leading" secondItem="31V-6p-7oO" secondAttribute="leading" constant="24" id="4na-vd-qzv"/>
+                                <constraint firstItem="Dyf-jK-WXJ" firstAttribute="top" secondItem="31V-6p-7oO" secondAttribute="top" constant="24" id="50i-54-6ip"/>
+                                <constraint firstAttribute="bottom" secondItem="aLx-hu-dtU" secondAttribute="bottom" constant="24" id="5RR-4N-F5o"/>
+                                <constraint firstItem="fgg-RW-gMW" firstAttribute="centerX" secondItem="31V-6p-7oO" secondAttribute="centerX" id="5dA-xh-SiB"/>
+                                <constraint firstAttribute="width" constant="327" id="9e3-fk-sku"/>
+                                <constraint firstItem="aLx-hu-dtU" firstAttribute="top" secondItem="fgg-RW-gMW" secondAttribute="bottom" constant="24" id="Csg-hP-5c7"/>
+                                <constraint firstItem="YoJ-TC-WDg" firstAttribute="centerY" secondItem="aLx-hu-dtU" secondAttribute="centerY" id="DX8-q3-toV"/>
+                                <constraint firstItem="fgg-RW-gMW" firstAttribute="top" secondItem="Dyf-jK-WXJ" secondAttribute="bottom" constant="8" id="MNl-Ad-yh4"/>
+                                <constraint firstItem="Dyf-jK-WXJ" firstAttribute="leading" secondItem="31V-6p-7oO" secondAttribute="leading" id="WQw-9M-Dpw"/>
+                                <constraint firstAttribute="trailing" secondItem="YoJ-TC-WDg" secondAttribute="trailing" constant="24" id="jMP-1m-Zjf"/>
+                                <constraint firstAttribute="trailing" secondItem="Dyf-jK-WXJ" secondAttribute="trailing" id="rQi-0h-C9w"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="31V-6p-7oO" firstAttribute="centerY" secondItem="geG-5L-1DT" secondAttribute="centerY" id="Tf1-AX-eLv"/>
+                        <constraint firstItem="31V-6p-7oO" firstAttribute="centerX" secondItem="geG-5L-1DT" secondAttribute="centerX" id="b3d-Xp-wwK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jPW-NI-ek6" secondAttribute="bottom" id="CY9-JR-vlx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LNr-74-7Hv" secondAttribute="trailing" constant="4" id="EIE-pA-ZYc"/>
+                <constraint firstItem="jPW-NI-ek6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K1F-IU-gXc"/>
+                <constraint firstItem="tUw-pT-qcv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="WJl-Vz-EYf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jPW-NI-ek6" secondAttribute="trailing" id="Yhu-Cs-rJ6"/>
+                <constraint firstAttribute="bottom" secondItem="geG-5L-1DT" secondAttribute="bottom" id="bzg-3o-aG2"/>
+                <constraint firstAttribute="trailing" secondItem="geG-5L-1DT" secondAttribute="trailing" id="cmW-Vg-LcR"/>
+                <constraint firstItem="geG-5L-1DT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iuS-vH-pRN"/>
+                <constraint firstItem="LNr-74-7Hv" firstAttribute="centerY" secondItem="tUw-pT-qcv" secondAttribute="centerY" id="k2H-Tj-d8u"/>
+                <constraint firstItem="geG-5L-1DT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vj3-l7-vTg"/>
+                <constraint firstItem="tUw-pT-qcv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="wWM-ql-DpS"/>
+                <constraint firstItem="jPW-NI-ek6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zOT-kb-NBo"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+        <tapGestureRecognizer id="59S-7A-Q5r">
+            <connections>
+                <action selector="onTapBack:" destination="-1" id="zlU-Cc-nFf"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="fmE-4x-ULd">
+            <connections>
+                <action selector="onTapDelete:" destination="-1" id="IhP-ol-Rq8"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="pTS-sx-E5E">
+            <connections>
+                <action selector="onTapYes:" destination="-1" id="ujN-PW-OR7"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="bFd-Cd-WGv">
+            <connections>
+                <action selector="onTapDiscard:" destination="-1" id="Nq0-QY-Wf0"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="backDark" width="48" height="48"/>
+        <image name="deleteGallery1" width="48" height="48"/>
+    </resources>
+</document>

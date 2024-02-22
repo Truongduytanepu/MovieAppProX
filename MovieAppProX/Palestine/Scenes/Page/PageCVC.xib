@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PageCVC" customModule="Palestine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="98" height="74"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aO-61-gqM">
+                        <rect key="frame" x="0.0" y="0.0" width="98" height="74"/>
+                        <color key="backgroundColor" red="0.7803921568627451" green="0.792156862745098" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1aO-61-gqM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yya-xP-UwZ"/>
+                <constraint firstAttribute="trailing" secondItem="1aO-61-gqM" secondAttribute="trailing" id="dve-Bm-wze"/>
+                <constraint firstAttribute="bottom" secondItem="1aO-61-gqM" secondAttribute="bottom" id="l1B-W2-U9p"/>
+                <constraint firstItem="1aO-61-gqM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="v8D-Gm-RlM"/>
+            </constraints>
+            <size key="customSize" width="233" height="149"/>
+            <connections>
+                <outlet property="containerView" destination="1aO-61-gqM" id="M8e-Dz-q2o"/>
+            </connections>
+            <point key="canvasLocation" x="253.43511450381678" y="-49.295774647887328"/>
+        </collectionViewCell>
+    </objects>
+</document>

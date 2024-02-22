@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22155"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomBannerAdView" customModule="Palestine" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerAdView" destination="1x1-w8-AyS" id="UsP-Cl-P3Y"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="5IO-Ob-GkB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1x1-w8-AyS" customClass="BannerAdMobView" customModule="AdMobManager">
+                    <rect key="frame" x="0.0" y="0.0" width="475" height="81"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1x1-w8-AyS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AFa-Rg-1Sx"/>
+                <constraint firstItem="1x1-w8-AyS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="H2i-0y-Lp8"/>
+                <constraint firstAttribute="bottom" secondItem="1x1-w8-AyS" secondAttribute="bottom" id="SEU-QI-u7B"/>
+                <constraint firstAttribute="trailing" secondItem="1x1-w8-AyS" secondAttribute="trailing" id="mqQ-zB-11p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="199.23664122137404" y="-251.7605633802817"/>
+        </view>
+    </objects>
+</document>

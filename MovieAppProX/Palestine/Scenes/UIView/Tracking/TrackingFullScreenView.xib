@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fraunces-VariableFont_SOFTWONKopszwght.ttf">
+            <string>Fraunces-Bold</string>
+        </array>
+        <array key="NunitoSans-ExtraBold.ttf">
+            <string>NunitoSans-ExtraBold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrackingFullScreenView" customModule="Palestine" customModuleProvider="target">
+            <connections>
+                <outlet property="appNameLabel" destination="gAX-Uo-eDA" id="GeJ-al-dKD"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="oo0-97-rm9"/>
+                <outlet property="doYouWantLabel" destination="meU-TO-kwa" id="4L8-qe-Idd"/>
+                <outlet property="isSupportedLabel" destination="HST-Tm-vOb" id="1E0-ep-xTP"/>
+                <outlet property="okLabel" destination="z6v-P3-y3O" id="Yah-o2-k6H"/>
+                <outlet property="youCanLabel" destination="Pt0-8v-dok" id="TC6-iJ-IzI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tracking" translatesAutoresizingMaskIntoConstraints="NO" id="gGr-Rj-1RM">
+                    <rect key="frame" x="9" y="0.0" width="375" height="351"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="351" id="m6X-ES-RaH"/>
+                        <constraint firstAttribute="width" constant="375" id="sho-lJ-yAp"/>
+                    </constraints>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPR-dF-JQC">
+                    <rect key="frame" x="21.666666666666657" y="271" width="350" height="382"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to improve your ad experience?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meU-TO-kwa">
+                            <rect key="frame" x="43.333333333333314" y="90" width="263" height="65.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="263" id="br4-mb-fua"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="24"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HST-Tm-vOb">
+                            <rect key="frame" x="23.333333333333343" y="176.66666666666669" width="303" height="134"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="303" id="Hvq-OX-5yO"/>
+                            </constraints>
+                            <string key="text">Filter For Good is supported by ads. To make these as relevant as possible, we would like to collect and share data with our partners. Please note that saying no won't get rid of ads. But if you say yes, you'll enjoy ads that really speak to you. Why settle for random ads when you can have ads that truly catch your eye?</string>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can update your choices in Settings at anytime" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt0-8v-dok">
+                            <rect key="frame" x="23.333333333333343" y="326.66666666666663" width="303" height="15.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="303" id="pWi-H2-dxW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="11"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAX-Uo-eDA">
+                            <rect key="frame" x="134.33333333333334" y="16" width="81" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="O2q-NP-gBE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Fraunces-Bold" family="Fraunces" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Pt0-8v-dok" secondAttribute="bottom" constant="40" id="06w-Ws-N60"/>
+                        <constraint firstItem="meU-TO-kwa" firstAttribute="top" secondItem="gAX-Uo-eDA" secondAttribute="bottom" constant="16" id="0FZ-YA-bjC"/>
+                        <constraint firstItem="gAX-Uo-eDA" firstAttribute="top" secondItem="YPR-dF-JQC" secondAttribute="top" constant="16" id="MOP-u3-kxZ"/>
+                        <constraint firstItem="HST-Tm-vOb" firstAttribute="top" secondItem="meU-TO-kwa" secondAttribute="bottom" constant="21" id="MlI-HT-wzZ"/>
+                        <constraint firstItem="meU-TO-kwa" firstAttribute="centerX" secondItem="YPR-dF-JQC" secondAttribute="centerX" id="NHr-Gk-zLX"/>
+                        <constraint firstItem="HST-Tm-vOb" firstAttribute="centerX" secondItem="YPR-dF-JQC" secondAttribute="centerX" id="Nwc-zN-M4d"/>
+                        <constraint firstItem="Pt0-8v-dok" firstAttribute="top" secondItem="HST-Tm-vOb" secondAttribute="bottom" constant="16" id="Qt5-22-l80"/>
+                        <constraint firstItem="gAX-Uo-eDA" firstAttribute="centerX" secondItem="YPR-dF-JQC" secondAttribute="centerX" id="dRn-5q-eoM"/>
+                        <constraint firstItem="Pt0-8v-dok" firstAttribute="centerX" secondItem="YPR-dF-JQC" secondAttribute="centerX" id="itX-Ob-wAK"/>
+                        <constraint firstAttribute="width" constant="350" id="xN1-T6-9G8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYW-6v-aBc">
+                    <rect key="frame" x="40.666666666666657" y="629" width="312" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6v-P3-y3O">
+                            <rect key="frame" x="141.33333333333334" y="10.333333333333369" width="29.333333333333343" height="27.333333333333329"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="20"/>
+                            <color key="textColor" red="0.99607843137254903" green="0.94901960784313721" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.49803921568627452" green="0.83137254901960778" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="z6v-P3-y3O" firstAttribute="centerY" secondItem="tYW-6v-aBc" secondAttribute="centerY" id="5Vo-gp-Moq"/>
+                        <constraint firstAttribute="width" constant="312" id="Tse-bH-uZ1"/>
+                        <constraint firstItem="z6v-P3-y3O" firstAttribute="centerX" secondItem="tYW-6v-aBc" secondAttribute="centerX" id="UqE-cc-HCx"/>
+                        <constraint firstAttribute="height" constant="48" id="ixe-d7-E6J"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="3dW-KM-iOh" appends="YES" id="s2k-7m-VWG"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstItem="YPR-dF-JQC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="85O-6Y-JZS"/>
+                <constraint firstItem="tYW-6v-aBc" firstAttribute="centerY" secondItem="YPR-dF-JQC" secondAttribute="bottom" id="UvW-aF-izf"/>
+                <constraint firstItem="gGr-Rj-1RM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YZz-o3-tXG"/>
+                <constraint firstItem="tYW-6v-aBc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ywf-LT-ya8"/>
+                <constraint firstItem="gGr-Rj-1RM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="edy-Ac-tfX"/>
+                <constraint firstItem="YPR-dF-JQC" firstAttribute="top" secondItem="gGr-Rj-1RM" secondAttribute="bottom" constant="-80" id="qhb-8u-zbL"/>
+            </constraints>
+            <point key="canvasLocation" x="-25.190839694656489" y="20.422535211267608"/>
+        </view>
+        <tapGestureRecognizer id="3dW-KM-iOh">
+            <connections>
+                <action selector="onTapAgree:" destination="-1" id="7qJ-lm-7JD"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="tracking" width="375" height="353"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fraunces-VariableFont_SOFTWONKopszwght.ttf">
+            <string>Fraunces-Bold</string>
+        </array>
+        <array key="NunitoSans-ExtraBold.ttf">
+            <string>NunitoSans-ExtraBold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrackingPopupView" customModule="Palestine" customModuleProvider="target">
+            <connections>
+                <outlet property="appNameLabel" destination="3sx-dF-n8o" id="g2D-81-xkR"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="vAu-Dz-v3M"/>
+                <outlet property="doYouWantLabel" destination="aPj-D8-Feq" id="tEM-51-dBl"/>
+                <outlet property="isSupportedLabel" destination="b65-ol-Vs2" id="Qf0-LF-DDX"/>
+                <outlet property="okLabel" destination="FqC-vo-psb" id="ekx-Ca-14z"/>
+                <outlet property="youCanLabel" destination="lWv-La-7Ec" id="50e-Xb-WFR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNw-5h-pzD">
+                    <rect key="frame" x="21.666666666666657" y="235" width="350" height="382"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to improve your ad experience?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPj-D8-Feq">
+                            <rect key="frame" x="43.333333333333314" y="90" width="263" height="65.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="263" id="cPO-ns-htc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="24"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b65-ol-Vs2">
+                            <rect key="frame" x="23.333333333333343" y="176.66666666666669" width="303" height="134"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="303" id="7Nj-NC-b6q"/>
+                            </constraints>
+                            <string key="text">Filter For Good is supported by ads. To make these as relevant as possible, we would like to collect and share data with our partners. Please note that saying no won't get rid of ads. But if you say yes, you'll enjoy ads that really speak to you. Why settle for random ads when you can have ads that truly catch your eye?</string>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can update your choices in Settings at anytime" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-La-7Ec">
+                            <rect key="frame" x="23.333333333333343" y="326.66666666666663" width="303" height="15.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="303" id="nbn-eF-28F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="11"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sx-dF-n8o">
+                            <rect key="frame" x="134.33333333333334" y="16" width="81" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="OqY-F8-Duw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Fraunces-Bold" family="Fraunces" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="9hH-U7-u6O"/>
+                        <constraint firstItem="b65-ol-Vs2" firstAttribute="top" secondItem="aPj-D8-Feq" secondAttribute="bottom" constant="21" id="BFX-Qi-IgQ"/>
+                        <constraint firstItem="aPj-D8-Feq" firstAttribute="top" secondItem="3sx-dF-n8o" secondAttribute="bottom" constant="16" id="FMF-iQ-7Hx"/>
+                        <constraint firstItem="b65-ol-Vs2" firstAttribute="centerX" secondItem="bNw-5h-pzD" secondAttribute="centerX" id="KVI-FM-5jd"/>
+                        <constraint firstItem="3sx-dF-n8o" firstAttribute="top" secondItem="bNw-5h-pzD" secondAttribute="top" constant="16" id="Lvv-Ax-ppL"/>
+                        <constraint firstAttribute="bottom" secondItem="lWv-La-7Ec" secondAttribute="bottom" constant="40" id="Utl-Bp-Pbh"/>
+                        <constraint firstItem="lWv-La-7Ec" firstAttribute="centerX" secondItem="bNw-5h-pzD" secondAttribute="centerX" id="amV-Pr-X22"/>
+                        <constraint firstItem="3sx-dF-n8o" firstAttribute="centerX" secondItem="bNw-5h-pzD" secondAttribute="centerX" id="ko6-SW-R4c"/>
+                        <constraint firstItem="aPj-D8-Feq" firstAttribute="centerX" secondItem="bNw-5h-pzD" secondAttribute="centerX" id="nzh-X4-gEM"/>
+                        <constraint firstItem="lWv-La-7Ec" firstAttribute="top" secondItem="b65-ol-Vs2" secondAttribute="bottom" constant="16" id="z8a-36-Ur7"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNO-s9-ODh">
+                    <rect key="frame" x="40.666666666666657" y="593" width="312" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqC-vo-psb">
+                            <rect key="frame" x="141.33333333333334" y="10.333333333333369" width="29.333333333333343" height="27.333333333333329"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="20"/>
+                            <color key="textColor" red="0.99607843139999996" green="0.94901960780000005" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.49803921569999998" green="0.83137254900000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="0ZW-ZO-GzL"/>
+                        <constraint firstAttribute="width" constant="312" id="Krv-6b-8N0"/>
+                        <constraint firstItem="FqC-vo-psb" firstAttribute="centerX" secondItem="XNO-s9-ODh" secondAttribute="centerX" id="ag9-de-Bfc"/>
+                        <constraint firstItem="FqC-vo-psb" firstAttribute="centerY" secondItem="XNO-s9-ODh" secondAttribute="centerY" id="v9L-48-enO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="LBn-k2-I8s" appends="YES" id="LaU-NP-AZg"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XNO-s9-ODh" firstAttribute="centerY" secondItem="bNw-5h-pzD" secondAttribute="bottom" id="46L-fz-WfE"/>
+                <constraint firstItem="XNO-s9-ODh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vtq-eP-fsd"/>
+                <constraint firstItem="bNw-5h-pzD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cYy-pQ-Lz7"/>
+                <constraint firstItem="bNw-5h-pzD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cr6-3i-G2G"/>
+            </constraints>
+            <point key="canvasLocation" x="-22" y="21"/>
+        </view>
+        <tapGestureRecognizer id="LBn-k2-I8s">
+            <connections>
+                <action selector="onTapAgree:" destination="-1" id="CsE-N6-d9H"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

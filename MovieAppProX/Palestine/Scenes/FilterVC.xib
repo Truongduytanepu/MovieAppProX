@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-ExtraBold.ttf">
+            <string>NunitoSans-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterVC" customModule="Palestine" customModuleProvider="target">
+            <connections>
+                <outlet property="chooseLabel" destination="icl-yN-A3k" id="oZW-HK-O5d"/>
+                <outlet property="collectionView" destination="FZh-qR-dHO" id="bmn-f8-QnN"/>
+                <outlet property="customNativeAdView" destination="SvR-IJ-uNn" id="02D-it-QRs"/>
+                <outlet property="doneLabel" destination="mLX-Dd-laf" id="SZg-ol-59N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backLight" translatesAutoresizingMaskIntoConstraints="NO" id="y8E-gb-LfC">
+                    <rect key="frame" x="4" y="67" width="48" height="48"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="Feq-VC-sZQ"/>
+                        <constraint firstAttribute="height" constant="48" id="k2X-d6-2UW"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="f17-O2-i21" appends="YES" id="InH-oZ-csA"/>
+                    </connections>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icl-yN-A3k">
+                    <rect key="frame" x="130.66666666666669" y="75" width="131.66666666666669" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="d8U-Zs-CVn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="22"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-Dd-laf">
+                    <rect key="frame" x="332.66666666666669" y="80" width="44.333333333333314" height="22"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Xrk-WH-Xq8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                    <color key="textColor" red="0.49803921568627452" green="0.83137254901960778" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="awO-BS-u1J" appends="YES" id="LU5-bR-Sub"/>
+                    </connections>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FZh-qR-dHO">
+                    <rect key="frame" x="0.0" y="123" width="393" height="445"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RTC-2u-DlM">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lRN-an-0Rp">
+                    <rect key="frame" x="0.0" y="568" width="393" height="250"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SvR-IJ-uNn" customClass="CustomNativeAdView" customModule="Palestine" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="Acl-pl-YdN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SvR-IJ-uNn" firstAttribute="leading" secondItem="lRN-an-0Rp" secondAttribute="leading" id="Bgk-eZ-jv4"/>
+                        <constraint firstAttribute="trailing" secondItem="SvR-IJ-uNn" secondAttribute="trailing" id="Dva-9t-Nrl"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="lRN-an-0Rp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4d7-aj-uRl"/>
+                <constraint firstItem="lRN-an-0Rp" firstAttribute="top" secondItem="FZh-qR-dHO" secondAttribute="bottom" id="9Xw-Wb-u3f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mLX-Dd-laf" secondAttribute="trailing" constant="16" id="CWZ-6r-Z5S"/>
+                <constraint firstItem="mLX-Dd-laf" firstAttribute="centerY" secondItem="y8E-gb-LfC" secondAttribute="centerY" id="CxT-lT-X6V"/>
+                <constraint firstItem="icl-yN-A3k" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HDi-Ac-dta"/>
+                <constraint firstItem="y8E-gb-LfC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Lrt-8k-Si3"/>
+                <constraint firstItem="icl-yN-A3k" firstAttribute="centerY" secondItem="y8E-gb-LfC" secondAttribute="centerY" id="Oa5-UF-hl2"/>
+                <constraint firstItem="y8E-gb-LfC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="WVL-ZP-wYd"/>
+                <constraint firstItem="FZh-qR-dHO" firstAttribute="top" secondItem="y8E-gb-LfC" secondAttribute="bottom" constant="8" id="XBN-JO-gks"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FZh-qR-dHO" secondAttribute="trailing" id="ck7-Me-RzS"/>
+                <constraint firstItem="SvR-IJ-uNn" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="esH-Wy-Afi"/>
+                <constraint firstItem="lRN-an-0Rp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jkI-Vg-AuX"/>
+                <constraint firstItem="FZh-qR-dHO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lR8-dC-Z5w"/>
+                <constraint firstAttribute="bottom" secondItem="lRN-an-0Rp" secondAttribute="bottom" priority="750" id="n58-X6-Dro"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+        <tapGestureRecognizer id="f17-O2-i21">
+            <connections>
+                <action selector="onTapBack:" destination="-1" id="2Mt-gU-ZvX"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="awO-BS-u1J">
+            <connections>
+                <action selector="onTapDone:" destination="-1" id="v4h-My-K6q"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="backLight" width="48" height="48"/>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

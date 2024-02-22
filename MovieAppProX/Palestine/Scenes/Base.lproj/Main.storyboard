@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XI5-iQ-uxa">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4hM-sk-Seq">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="XI5-iQ-uxa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3PD-lk-Dqj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ghH-fq-fsI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvR-H5-wzJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="281"/>
+        </scene>
+        <!--SplashVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashVC" customModule="Palestine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash2" translatesAutoresizingMaskIntoConstraints="NO" id="1gv-cd-Dcl">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="lxR-h1-IdU">
+                                <rect key="frame" x="103" y="307.66666666666669" width="187" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="6lb-Kx-q6e"/>
+                                    <constraint firstAttribute="height" constant="185" id="frD-qm-cVE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash1" translatesAutoresizingMaskIntoConstraints="NO" id="eHZ-1e-iGy">
+                                <rect key="frame" x="85" y="437.66666666666669" width="223" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="bs1-wJ-58s"/>
+                                    <constraint firstAttribute="width" constant="223" id="xAl-1E-nAx"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mt9-Ja-MTj" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="186.66666666666666" y="517.66666666666663" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="qII-rp-lRG"/>
+                                    <constraint firstAttribute="width" constant="20" id="zJn-OZ-8GO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballSpinFadeLoader"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Yk-x6-Lov"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="lxR-h1-IdU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7g6-fD-syl"/>
+                            <constraint firstItem="eHZ-1e-iGy" firstAttribute="top" secondItem="lxR-h1-IdU" secondAttribute="bottom" constant="-55" id="9o6-sG-h9u"/>
+                            <constraint firstAttribute="trailing" secondItem="1gv-cd-Dcl" secondAttribute="trailing" id="Fdx-5y-7af"/>
+                            <constraint firstItem="Mt9-Ja-MTj" firstAttribute="top" secondItem="lxR-h1-IdU" secondAttribute="bottom" constant="25" id="IHW-2z-sRK"/>
+                            <constraint firstAttribute="bottom" secondItem="1gv-cd-Dcl" secondAttribute="bottom" id="IZz-3X-vdG"/>
+                            <constraint firstItem="eHZ-1e-iGy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="UJr-wo-sMY"/>
+                            <constraint firstItem="1gv-cd-Dcl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wij-Gb-MCR"/>
+                            <constraint firstItem="eHZ-1e-iGy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aT6-Tb-shl"/>
+                            <constraint firstItem="1gv-cd-Dcl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yOc-sn-KTL"/>
+                            <constraint firstItem="Mt9-Ja-MTj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zYk-oI-BzI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cFM-lZ-2jb"/>
+                    <connections>
+                        <outlet property="loadingView" destination="Mt9-Ja-MTj" id="haN-7h-T4f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-750" y="281"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash" width="185.66667175292969" height="184.33332824707031"/>
+        <image name="splash1" width="221" height="23.333333969116211"/>
+        <image name="splash2" width="375" height="812"/>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
